@@ -1,0 +1,68 @@
+.card {
+  &__left {
+    grid-row: 2/-1;
+    grid-column: 1/2;
+    background-color: $color-cyan;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 50em) {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+    }
+  }
+  &__right {
+    grid-row: 2/-1;
+    grid-column: 2/3;
+    background-color: $color-cyan-light;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 50em) {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+    }
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  &__price {
+    display: flex;
+    font-size: 3.6rem;
+    place-items: center;
+    & p {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    & span {
+      display: inline-block;
+      font-size: 1.4rem;
+      opacity: 0.6;
+    }
+  }
+  &__text {
+    font-size: $font-display;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  &__list {
+    list-style: none;
+    &--item {
+      line-height: 1.5;
+      font-size: 1.4rem;
+    }
+  }
+  &__btn {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem;
+    background-color: $color-bright-yellow;
+    border-radius: 5px;
+    color: inherit;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}

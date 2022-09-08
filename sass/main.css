@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(204deg, 43%, 93%);
+  color: hsl(204deg, 43%, 93%);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 22rem 26rem;
+  grid-template-columns: 32rem 32rem;
+  background-color: #fff;
+  border-radius: 9px;
+  margin: auto 3.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+@media (max-width: 50em) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 34rem 29rem 29rem;
+  }
+}
+
+.header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 50em) {
+  .header {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+}
+.header__title {
+  font-size: 2.4rem;
+  color: hsl(179deg, 62%, 43%);
+  font-weight: 700;
+}
+.header__subtitle {
+  font-size: 1.8rem;
+  color: hsl(71deg, 73%, 54%);
+  font-weight: 700;
+}
+.header__text {
+  color: hsl(218deg, 22%, 67%);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.card__left {
+  grid-row: 2/-1;
+  grid-column: 1/2;
+  background-color: hsl(179deg, 62%, 43%);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 50em) {
+  .card__left {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+.card__right {
+  grid-row: 2/-1;
+  grid-column: 2/3;
+  background-color: hsl(179deg, 47%, 52%);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 50em) {
+  .card__right {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+}
+.card__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.card__price {
+  display: flex;
+  font-size: 3.6rem;
+  place-items: center;
+}
+.card__price p {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.card__price span {
+  display: inline-block;
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
+.card__text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.card__list {
+  list-style: none;
+}
+.card__list--item {
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+.card__btn {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem;
+  background-color: hsl(71deg, 73%, 54%);
+  border-radius: 5px;
+  color: inherit;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
